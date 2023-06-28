@@ -8,8 +8,16 @@
  "signed": {
   "_type": "root",
   "consistent_snapshot": true,
-  "expires": "2024-06-27T09:00:25Z",
+  "expires": "2024-06-27T09:02:03Z",
   "keys": {
+   "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEohqIdE+yTl4OxpX8ZxNUPrg3SL9H\nBDnhZuceKkxy2oMhUOxhWweZeG3bfM1T4ZLnJimC6CAYVU5+F5jZCoftRw==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-playground-keyowner": "@jku"
+   },
    "a7a79b96e46a82e4d36695ce014c0a5ec1d3a1e88b4718febefdc80b4f708ae6": {
     "keytype": "ecdsa",
     "keyval": {
@@ -55,7 +63,8 @@
    },
    "targets": {
     "keyids": [
-     "a7a79b96e46a82e4d36695ce014c0a5ec1d3a1e88b4718febefdc80b4f708ae6"
+     "a7a79b96e46a82e4d36695ce014c0a5ec1d3a1e88b4718febefdc80b4f708ae6",
+     "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93"
     ],
     "threshold": 2
    },
