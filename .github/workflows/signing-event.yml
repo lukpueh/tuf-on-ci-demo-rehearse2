@@ -1,0 +1,20 @@
+name: Signing event
+
+permissions: {}
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'sign/**'
+
+jobs:
+  handle-signing-event:
+    name: Playground signing event
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # for adding targets changes into the signing event branch
+      issues: write
+    steps:
+      - name: Signing event
+        uses: jku/repository-playground/playground/actions/signing-event@main
