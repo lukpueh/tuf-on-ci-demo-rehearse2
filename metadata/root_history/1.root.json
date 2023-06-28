@@ -1,0 +1,86 @@
+{
+ "signatures": [
+  {
+   "keyid": "a7a79b96e46a82e4d36695ce014c0a5ec1d3a1e88b4718febefdc80b4f708ae6",
+   "sig": "3045022008f565aa5b4ae1d0d2472bbca6679617a05977792a9e3de5225c4f784ebbd818022100e9cbbd6dda190bf1ca527232ef2865273979c380d0b3ad442ea3d5cf25935d6d"
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2024-06-27T09:02:03Z",
+  "keys": {
+   "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEohqIdE+yTl4OxpX8ZxNUPrg3SL9H\nBDnhZuceKkxy2oMhUOxhWweZeG3bfM1T4ZLnJimC6CAYVU5+F5jZCoftRw==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-playground-keyowner": "@jku"
+   },
+   "a7a79b96e46a82e4d36695ce014c0a5ec1d3a1e88b4718febefdc80b4f708ae6": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE7aqfNsWPUKAFSrLDAaJOZOnf4RXQ\nVByN/f69+tEzKyHHlCf/6DBcb6Z+vZYTZuOAYoJ/d9CmOdP1NKnwaut68A==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-playground-keyowner": "@lukpueh"
+   },
+   "abcd": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/lukpueh/tuf-on-ci-demo-rehearse2/.github/workflows/snapshot.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-playground-online-uri": "sigstore:"
+   },
+   "efgh": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/lukpueh/tuf-on-ci-demo-rehearse2/.github/workflows/version-bumps.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-playground-online-uri": "sigstore:"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "a7a79b96e46a82e4d36695ce014c0a5ec1d3a1e88b4718febefdc80b4f708ae6"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "abcd",
+     "efgh"
+    ],
+    "threshold": 1,
+    "x-playground-expiry-period": 365,
+    "x-playground-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "a7a79b96e46a82e4d36695ce014c0a5ec1d3a1e88b4718febefdc80b4f708ae6",
+     "762cb22caca65de5e9b7b6baecb84ca989d337280ce6914b6440aea95769ad93"
+    ],
+    "threshold": 2
+   },
+   "timestamp": {
+    "keyids": [
+     "abcd",
+     "efgh"
+    ],
+    "threshold": 1,
+    "x-playground-expiry-period": 2,
+    "x-playground-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-playground-expiry-period": 365,
+  "x-playground-signing-period": 60
+ }
+}
